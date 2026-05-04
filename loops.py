@@ -96,9 +96,16 @@
 # for i in range(1,11):
 #     print(5 * i)
 
-#PASS statement-> null statement that does nothing. It is used as a placeholder for the future code
+#Factorial program using dynamic input
 
-for i in range(5):
-    pass
+num = int(input("Enter a number: "))
 
-print("some useful work")
+factorial = 1
+
+if num < 0:
+    print("Factorial does not exist for negative numbers")
+else:
+    for i in range(1, num + 1):
+        factorial = factorial * i
+
+    print("Factorial of", num, "is", factorial)
